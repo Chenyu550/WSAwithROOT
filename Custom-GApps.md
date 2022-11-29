@@ -1,15 +1,15 @@
-# How to install custom GApps
+# 如何安装自定义 GApp
 
-1. Build WSA without gapps to let the script download needed files
+1. 构建没有gapps的WSA让脚本下载需要的文件
 
-    `./build.sh --gapps-brand none`
+     `./build.sh --gapps-brand none`
 1.
-    - For OpenGApps
+     - 对于 OpenGApps
 
-        Place custom OpenGApps to `download` folder and rename to `OpenGApps-{arch}-{variant}.zip` (e.g. `OpenGApps-x64-pico.zip`)
-    - For MindTheGapps
+         将自定义 OpenGApps 放入“下载”文件夹并重命名为“OpenGApps-{arch}-{variant}.zip”（例如“OpenGApps-x64-pico.zip”）
+     - 对于 MindTheGapps
 
-        Place custom MindTheGapps to `download` folder and rename to `MindTheGapps-{arch}.zip` (e.g. `MindTheGapps-x64.zip`)
-1. Build WSA offline
+         将自定义 MindTheGapps 放入“下载”文件夹并重命名为“MindTheGapps-{arch}.zip”（例如“MindTheGapps-x64.zip”）
+1. 离线搭建WSA
 
-    `./build.sh --offline --gapps-brand {brand} --gapps-variant {variant}`
+     `./build.sh --offline --gapps-brand {brand} --gapps-variant {variant}`
