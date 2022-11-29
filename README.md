@@ -2,7 +2,7 @@
 
 :warning: 对于 fork 开发人员：请不要使用 GitHub Actions 进行构建，因为 GitHub 会根据此上游存储库计算您的 fork GitHub Actions 使用情况，这可能会导致此上游存储库被 GitHub 工作人员禁用，例如 [MagiskOnWSA](https://github.com/LSPosed/MagiskOnWSA），因为有许多分叉构建 GitHub Actions，并针对此上游存储库计算分支的 Action 使用情况。
 
-## 支持从这些系统生成
+## 支持从这些系统生成（不支持Windows）
 
 - Linux（x86_64 或 arm64）
 
