@@ -81,10 +81,10 @@
     - 如果弹出窗口消失**没有询问管理员权限**并且 WSA 没有成功安装，您应该以管理员身份手动运行“Install.ps1”：
         1. 按 `Win+x` 并选择 `Windows终端(管理员)`
         2. 输入`cd "{X:\path\to\your\extracted\folder}"`并回车，记得把`{X:\path\to\your\extracted\folder}`替换掉`{}`，例如 `cd "D:\wsa"`
-        3. 输入 `PowerShell.exe -ExecutionPolicy Bypass -File .\Install.ps1` 然后按 `enter`
+        3. 输入 `PowerShell.exe -ExecutionPolicy Bypass -File .\Install.ps1` 然后按 `Enter`
         4. 脚本将运行并安装WSA
         5. 如果这个解决方法不起作用，说明您的 PC 不支持 WSA
-1. Magisk/Play商店将出现。通过安装启用 zygisk 的 LSPosed-zygisk 或 Riru 的 LSPosed-riru 享受吧！
+1. Magisk/Play商店将会出现。通过安装启用 Zygisk 的 LSPosed-zygisk 或 Riru 的 LSPosed-riru 享受吧！
 
 ## 常见问题
 
@@ -109,10 +109,10 @@
     `Install.ps1` 帮助您启用它（如果未启用）。重新启动后，重新运行“Install.ps1”以安装 WSA。如果仍然无法正常工作，则必须在 BIOS 中启用虚拟化。这是一个很长的故事，所以向百度寻求帮助。
 - 如何将系统重新挂载为可读写？
 
-    在 WSA 中没有办法，因为它被 Hyper-V 安装为只读。您可以通过制作 Magisk 模块来修改系统。或者直接修改system.img。向谷歌寻求帮助。
+    在 WSA 中没有办法做到，因为它被 Hyper-V 安装为只读。您可以通过制作 Magisk 模块来修改系统。或者直接修改`system.img`。向百度寻求帮助。
 - 我不能`adb connect localhost:58526`
 
-    确保开发者模式已启用。如果问题仍然存在，请在设置页面上检查 WSA 的 IP 地址并尝试“adb connect ip:5555”。
+    确保开发者模式已启用。如果问题仍然存在，请在设置页面上检查 WSA 的 IP 地址并尝试`adb connect ip:5555`。
 - Magisk 在线模块列表为空？
 
     Magisk 主动删除了在线模块存储库。您可以在本地或通过 `adb push module.zip /data/local/tmp` 和 `adb shell su -c magisk --install-module /data/local/tmp/module.zip` 安装模块。
@@ -129,15 +129,15 @@
 
     您可以从这里下载 [MindtheGapps](https://androidfilehost.com/?w=files&flid=322935) ([镜像](http://downloads.codefi.re/jdcteam/javelinanddart/gapps))
 
-    请注意，没有 x86_64 预构建，因此您需要自己构建它 ([Repository](https://gitlab.com/MindTheGapps/vendor_gapps))。
+    请注意，没有 x86_64 预构建，因此您需要自己构建它 ([存储库](https://gitlab.com/MindTheGapps/vendor_gapps))。
 - 我可以将 OpenGApps 切换到 MindTheGapps 并将用户数据保留在以前的版本中吗？
 
-    不可以。您应该在更改 GApps 品牌后擦除数据。否则，您会发现无法识别已安装的 GApp。
+    不可以。您应该在更改 GApps 的源后擦除数据。否则，您会发现无法识别已安装的 GApp。
 
 ## 友情链接
 
 - [StoreLib](https://github.com/StoreDev/StoreLib)：用于下载WSA的API
 - [Magisk](https://github.com/topjohnwu/Magisk): 安卓上最著名的root解决方案
-- [The Open GApps Project](https://opengapps.org)：最著名的 Google Apps 软件包解决方案之一
+- [开放GApps项目](https://opengapps.org)：最著名的 Google Apps 软件包解决方案之一
 - [WSA-Kernel-SU](https://github.com/LSPosed/WSA-Kernel-SU) 和 [kernel-assisted-superuser](https://git.zx2c4.com/kernel-assisted-superuser/ ): 用于调试 Magisk 集成的内核 `su`
 - [WSAGAScript](https://github.com/ADeltaX/WSAGAScript): 第一个用于 WSA 的 GApps 集成脚本
