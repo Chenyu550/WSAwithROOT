@@ -1,6 +1,6 @@
 ### 注意
 
-这不是我的作品，这是我从`别人的`[存储库](https://github.com/LSPosed/MagiskOnWSALocal)里克隆过来的，来以防万一被封禁无法访问
+这不是我的作品，这是我从`别人的`[存储库](https://github.com/LSPosed/MagiskOnWSALocal)里克隆过来的，来以防万一原库被封禁无法访问
 
 # WSA 上的 Magisk（包括 Google Apps）
 
