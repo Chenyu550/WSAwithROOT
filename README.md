@@ -1,6 +1,10 @@
+### 注意
+
+这不是我的作品，这是我从`别人的`[存储库](https://github.com/LSPosed/MagiskOnWSALocal)里克隆过来的，来以防万一被封禁无法访问
+
 # WSA 上的 Magisk（包括 Google Apps）
 
-:warning: 对于 fork 开发人员：请不要使用 GitHub Actions 进行构建，因为 GitHub 会根据此上游存储库计算您的 fork GitHub Actions 使用情况，这可能会导致此上游存储库被 GitHub 工作人员禁用，例如 [MagiskOnWSA](https://github.com/LSPosed/MagiskOnWSA），因为有许多分叉构建 GitHub Actions，并针对此上游存储库计算分支的 Action 使用情况。
+:warning: 对于 fork 开发人员：请不要使用 GitHub Actions 进行构建，因为 GitHub 会根据此上游存储库计算您的 fork GitHub Actions 使用情况，这可能会导致此上游存储库被 GitHub 工作人员禁用，例如 [MagiskOnWSA](https://github.com/LSPosed/MagiskOnWSA)，因为有许多分叉构建 GitHub Actions，并针对此上游存储库计算分支的 Action 使用情况。
 
 ## 支持从这些系统生成（不支持Windows）
 
@@ -17,6 +21,7 @@
     - Ubuntu（您可以使用 [WSL2](https://apps.microsoft.com/store/search?publisher=Canonical%20Group%20Limited)）
 
         开箱即用。
+        
     - Debian（您可以使用 [WSL2](https://apps.microsoft.com/store/detail/debian/9MSVKQC78PK6)）
 
         需要将 `contrib` 源添加到源列表以安装 winetricks。
@@ -28,6 +33,7 @@
     `run.sh` 将自动处理所有依赖项。
 
     无需键入任何命令。
+    
   - 其他发行版
 
     手动安装依赖项。
